@@ -9,6 +9,7 @@ var base;
 var block1;
 var polygon;
 
+
 function setup() {
   createCanvas(800,600);
   engine = Engine.create();
@@ -131,7 +132,8 @@ function mouseReleased(){
 }
 function keyPressed(){
   if(keyCode===32){
-      Slingshot.attach(polygon.body);
+	Matter.Body.setPosition(polygon.body,{x:100,y:100m})
+      	Slingshot.attach(polygon.body);
 
 
   }
